@@ -8,11 +8,12 @@
   
   <title>Frontend Mentor | Blog preview card</title>
 </head>
-<body class="bg-yellow-300">
-  <div class="bg-white flex flex-col items-center">
-
+<body class="bg-yellow-300 flex flex-col h-screen items-center justify-center">
+  <!-- Card Content -->
+  <div class="bg-white flex flex-col w-[384px] h-fit p-6 rounded-2xl border border-black shadow-[8px_8px] shadow-black/100">
     <!-- Header Image SVG -->
-    <svg class="w-[336px] h-[200px]" xmlns="http://www.w3.org/2000/svg" width="336" height="201" fill="none" viewBox="0 0 336 201">
+     <div class="flex justify-center mb-6">
+      <svg class="w-[336px] h-[200px] rounded-lg" xmlns="http://www.w3.org/2000/svg" width="336" height="201" fill="none" viewBox="0 0 336 201">
       <g clip-path="url(#a)"><path fill="#F4D04E" d="M0 .5h336v200H0z"/>
         <rect width="139" height="95" x="87.996" y="77.729" fill="#fff" rx="47.5" transform="rotate(-45 87.996 77.729)"/>
         <rect width="139" height="95" x="54.055" y="77.729" fill="#111" rx="47.5" transform="rotate(-45 54.055 77.729)"/>
@@ -24,29 +25,32 @@
         <path stroke="#111" stroke-width="3" d="m253.339 149.574-12.144 12.145 14.256 14.257v12.672h12.673l13.729 13.729 12.145-12.145M278.685 124.228l-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145M304.031 98.883l-12.145 12.144 14.257 14.257v12.673h12.673l13.729 13.729 12.144-12.145M329.376 73.537l-12.145 12.145 14.257 14.257v12.672h12.673l13.729 13.729 12.145-12.144"/>
         <path stroke="#fff" stroke-width="5" d="m354.722 48.191-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145"/><mask id="b" width="285" height="285" x="234" y="-8" maskUnits="userSpaceOnUse" style="mask-type:alpha">
         <path fill="#111" d="M234.864 209.036 451.4-7.5l67.175 67.175-216.536 216.536z"/>
-      </mask>
-        <g stroke="#fff" mask="url(#b)">
-          <path stroke-width="3" d="m253.339 149.574-12.144 12.145 14.256 14.257v12.672h12.673l13.729 13.729 12.145-12.145M278.685 124.228l-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145M304.031 98.883l-12.145 12.144 14.257 14.257v12.673h12.673l13.729 13.729 12.144-12.145M329.376 73.537l-12.145 12.145 14.257 14.257v12.672h12.673l13.729 13.729 12.145-12.145"/>
-          <path stroke-width="5" d="m354.722 48.191-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145"/>
+        </mask>
+          <g stroke="#fff" mask="url(#b)">
+            <path stroke-width="3" d="m253.339 149.574-12.144 12.145 14.256 14.257v12.672h12.673l13.729 13.729 12.145-12.145M278.685 124.228l-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145M304.031 98.883l-12.145 12.144 14.257 14.257v12.673h12.673l13.729 13.729 12.144-12.145M329.376 73.537l-12.145 12.145 14.257 14.257v12.672h12.673l13.729 13.729 12.145-12.145"/>
+            <path stroke-width="5" d="m354.722 48.191-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145"/>
+          </g>
         </g>
-      </g>
-      <defs>
-        <clipPath id="a">
-          <path fill="#fff" d="M0 .5h336v200H0z"/>
-        </clipPath>
-      </defs>
-    </svg>
-
+        <defs>
+          <clipPath id="a">
+            <path fill="#fff" d="M0 .5h336v200H0z"/>
+          </clipPath>
+        </defs>
+      </svg>
+     </div>
+    
     <!-- Blog Card Content-->
-    <p>Learning</p>
-    <p>Published 21 Dec 2023</p>
-    <h1>HTML & CSS Foundations</h1>
-    <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
-  
-    <!-- Author Information -->
      <div>
-        <img src="/assets/images/image-avatar.webp" alt="">
-        <p>Greg Hooper</p>
+      <p class="font-bold text-sm text-gray-950 bg-yellow-300 px-3 py-1 w-fit h-fit rounded mb-3">Learning</p>
+      <p class="text-sm">Published 21 Dec 2023</p>
+      <h1 class="text-2xl font-bold text-gray-950 my-2">HTML & CSS foundations</h1>
+      <p class="text-gray-500 font-normal mb-6">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+     </div>
+    
+    <!-- Author Information -->
+     <div class="flex text-sm items-center gap-3">
+        <img class="h-[32px] w-[32px]" src="/assets/images/image-avatar.webp" alt="">
+        <p class="font-bold">Greg Hooper</p>
      </div>
   </div>
 
