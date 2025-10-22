@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="stylesheet" href="output.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
@@ -10,10 +10,10 @@
 </head>
 <body class="bg-yellow-300 flex flex-col h-screen items-center justify-center">
   <!-- Card Content -->
-  <div class="bg-white flex flex-col w-[384px] h-fit p-6 rounded-2xl border border-black shadow-[8px_8px] shadow-black/100">
+  <div class="bg-white flex flex-col w-[384px] max-[400px]:w-[327px] h-fit p-6 rounded-2xl border border-black shadow-[8px_8px] shadow-black/100 max-[400px]:overflow-hidden">
     <!-- Header Image SVG -->
-     <div class="flex justify-center mb-6">
-      <svg class="w-[336px] h-[200px] rounded-lg" xmlns="http://www.w3.org/2000/svg" width="336" height="201" fill="none" viewBox="0 0 336 201">
+     <div class="flex justify-center mb-6 max-[400px]:mb-3">
+      <svg class="w-[336px] h-[200px] rounded-lg overflow-hidden" xmlns="http://www.w3.org/2000/svg" width="336" height="201" fill="none" viewBox="0 0 336 201">
       <g clip-path="url(#a)"><path fill="#F4D04E" d="M0 .5h336v200H0z"/>
         <rect width="139" height="95" x="87.996" y="77.729" fill="#fff" rx="47.5" transform="rotate(-45 87.996 77.729)"/>
         <rect width="139" height="95" x="54.055" y="77.729" fill="#111" rx="47.5" transform="rotate(-45 54.055 77.729)"/>
@@ -42,9 +42,9 @@
     <!-- Blog Card Content-->
      <div>
       <p class="font-bold text-sm text-gray-950 bg-yellow-300 px-3 py-1 w-fit h-fit rounded mb-3">Learning</p>
-      <p class="text-sm">Published 21 Dec 2023</p>
-      <h1 class="text-2xl font-bold text-gray-950 my-2">HTML & CSS foundations</h1>
-      <p class="text-gray-500 font-normal mb-6">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      <p class="text-sm max-[400px]:text-xs">Published 21 Dec 2023</p>
+      <h1 class="text-2xl font-bold text-gray-950 my-2 max-[400px]:text-xl">HTML & CSS foundations</h1>
+      <p class="text-gray-500 font-normal text-sm mb-6">These languages are the backbone of every website, defining structure, content, and presentation.</p>
      </div>
     
     <!-- Author Information -->
